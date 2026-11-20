@@ -11,7 +11,6 @@ class Solution {
         int[] colMax = new int[n];
         Arrays.fill(rowMin, Integer.MAX_VALUE);
         
-        // Step 1: Find the minimum of each row and maximum of each column
         for (int r = 0; r < m; r++) {
             for (int c = 0; c < n; c++) {
                 rowMin[r] = Math.min(rowMin[r], matrix[r][c]);
