@@ -17,6 +17,8 @@ class Solution {
                 colMax[c] = Math.max(colMax[c], matrix[r][c]);
             }
         }
+        
+        // Step 2: Check which elements match both their row min and col max
         List<Integer> result = new ArrayList<>();
         for (int r = 0; r < m; r++) {
             for (int c = 0; c < n; c++) {
